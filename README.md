@@ -1,4 +1,4 @@
-# SQL Business Intelligence Automator[cite: 1]
+# SQL Business Intelligence Automator`
 
 ## Executive Summary
 This project provides an end-to-end automated data pipeline that transforms raw commercial data into actionable business intelligence[cite: 1]. 
@@ -13,7 +13,7 @@ Organizations often rely on manual data extraction and spreadsheet manipulation 
 I engineered a Python-based automation pipeline that seamlessly ingests raw sales data, structures it within a relational database, and automatically generates ready-to-present financial reports and visualizations[cite: 1].
 
 ### 1. Centralized Data Architecture (Solved Data Silos)
-* **Action:** Created `data_loader.py` to parse raw inputs (e.g., `data/Sample - Superstore.csv`)[cite: 1].
+* **Action:** Created `data_loader.py` to parse raw inputs (e.g., `data/Sample - Superstore.csv`)`.
 * **Result:** Automatically normalizes and loads the data into a secure `business.db` SQLite database, establishing a single source of truth[cite: 1].
 
 ### 2. Automated Analytics & Visualization (Solved Reporting Delays)
