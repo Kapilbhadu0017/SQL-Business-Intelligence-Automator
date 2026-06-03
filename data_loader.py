@@ -1,6 +1,5 @@
 import pandas as pd
 import sqlite3
-import math
 
 df = pd.read_csv('data/Sample - Superstore.csv', encoding = 'latin1')
 

@@ -35,17 +35,17 @@ def generate_report():
     plt.figure(figsize=(10,6))
     bars = plt.barh(df['product_name'].iloc[::-1], df['total_revenue'].iloc[::-1], color = '#2ca02c')
 
-    plt.title('otal Revenue by Product (2017)', fontsize = 16)
-    plt.xlabel('Product', fontsize = 12)
-    plt.ylabel('Revenue ($)', fontsize = 12)
+    plt.title('Total Revenue by Product (2017)', fontsize = 16)
+    plt.xlabel('Revenue ($)', fontsize = 12)
+    plt.ylabel('Product', fontsize = 12)
     plt.xticks(rotation = 45, ha='right')
     plt.tight_layout()
     for bar in bars:
-        yval = bar.get_height()
-        plt.text(bar.get_x() + bar.get_width()/2, yval+ 100, f"${yval:,.2f}", ha="center", va="bottom")
+        xval = bar.get_width()
+        plt.text(xval + 200, bar.get_y() + bar.get_height()/2, f"${xval:,.2f}", va="center", ha="left")
     
     image_path = 'reports/revenue_chart.png'
-    plt.savefig(image_path)
+    plt.savefig(image_path, bbox_inches='tight')
     print(f"Visual Chart Generated: {image_path}")
 
 if __name__ == '__main__':
